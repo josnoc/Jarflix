@@ -1,0 +1,35 @@
+body {
+  background-color: #263238;
+}
+
+.main {
+  color: white;
+
+  .Header {
+    padding: 20px;
+    background-color: #000a12;
+    display: grid;
+    grid-template-columns: 150px auto;
+
+    h1 {
+      font-family: pacifico;
+      color: rgb(145, 0, 0);
+    }
+
+    input {
+      background-color: #4f5b62;
+      color: white;
+
+      &::placeholder {
+        color: white;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 660px) {
+  main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}

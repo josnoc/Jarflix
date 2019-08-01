@@ -1,0 +1,30 @@
+.Movie {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto auto;
+
+  button {
+    z-index: 1;
+    font-size: 20pt;
+    position: fixed;
+    opacity: 0.2;
+    margin: 20px;
+    transition: all 0.1s;
+
+    &:hover {
+      opacity: 1;
+      background-color: #000a12;
+    }
+  }
+
+  .videoWrapper {
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: auto auto auto;
+
+    video {
+      grid-row: 2;
+      width: 100vw;
+    }
+  }
+}

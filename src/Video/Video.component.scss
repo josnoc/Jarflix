@@ -1,0 +1,29 @@
+.VideoComponent {
+  text-align: center;
+  padding: 20px;
+  height: 100%;
+
+  .ComponentWrapper {
+    display: grid;
+    grid-template-rows: 90% 10%;
+    height: 100%;
+    margin: 20px;
+    padding: 0px;
+    transition: all 0.4s;
+
+    img {
+      width: 100%;
+    }
+
+    &:hover {
+      border: 1px solid #910000;
+      margin: 0;
+      padding: 0px;
+    }
+  }
+}
+
+@media screen and (min-width: 660px) {
+  img {
+  }
+}
