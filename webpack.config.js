@@ -11,41 +11,41 @@ module.exports = {
   devtool: "cheap-module-source-map", //"inline-source-map"
   output: {
     filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "public", "dist")
+    path: path.resolve(__dirname, "public", "dist"),
   },
   optimization: {
-    minimizer: [new UglifyJsPlugin({}), new OptimizeCSSAssetsPlugin({})]
+    minimizer: [new UglifyJsPlugin({}), new OptimizeCSSAssetsPlugin({})],
   },
   watchOptions: {
-    ignored: /node_modules/
+    ignored: /node_modules/,
   },
   resolve: {
-    extensions: [".ts", ".tsx", ".js", ".json"]
+    extensions: [".ts", ".tsx", ".js", ".json"],
   },
   module: {
     rules: [
       {
         test: /\.s?css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
         test: /\.tsx?$/,
         loader: "awesome-typescript-loader",
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
-        test: /\.(jpg|png|gif|webp|svg)$/,
+        test: /\.(jpe?g|png|gif|webp|svg)$/,
         use: {
           loader: "file-loader",
           options: {
             name: "images/[name].[hash].[ext]",
             publicPath: "/dist",
-            useRelativePath: false
-          }
-        }
+            useRelativePath: false,
+          },
+        },
       },
-      { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
-    ]
+      { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
+    ],
   },
   plugins: [
     new CleanWebpackPlugin(["dist"]),
@@ -55,11 +55,11 @@ module.exports = {
       test: /\.js$/,
       threshold: 244,
       deleteOriginalAssets: true,
-      minRatio: 0.8
+      minRatio: 0.8,
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
-      chunkFilename: "[id].css"
-    })
-  ]
+      chunkFilename: "[id].css",
+    }),
+  ],
 };

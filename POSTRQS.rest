@@ -22,7 +22,7 @@ POST https://localhost:3000/videos HTTP/1.1
 Content-Type: application/json
 
 {
-  "path": "../media/sintel-2048-stereo.mp4",
+  "path": "media/sintel-2048-stereo.mp4",
   "name": "Sintel",
   "overview": "The film follows a girl named Sintel who is searching for a baby dragon she calls Scales. A flashback reveals that Sintel found Scales with its wing injured and helped care for it, forming a close bond with it. By the time its wing recovered and it was able to fly, Scales was caught by an adult dragon. Sintel has since embarked on a quest to rescue Scales, fending off beasts and warriors along the way. She eventually comes across a cave housing an adult and baby dragon, the latter of which she believes to be Scales. The adult dragon discovers and attacks Sintel, but hesitates to kill her. Sintel slays the dragon, only to recognize the scar on its wing and realize the dragon is an adult Scales, and that she too has aged considerably. Sintel leaves the cave heartbroken, unknowingly followed by Scales's baby.",
   "director": "Colin Levy",
@@ -38,13 +38,13 @@ POST https://localhost:3000/videos HTTP/1.1
 Content-Type: application/json
 
 {
-  "path": "../media/spring.mp4",
-  "name": "Spring",
-  "overview": "The two main characters, the younger, nervous Emo (voiced by Cas Jansen) and the older, experienced Proog (voiced by Tygo Gernandt), are on a journey inside the folds of a giant machine. They inquisitively explore the twisted and dark complex of wires, gears, cogs, and more, until conflict suddenly arises between them. Proog is often portrayed bullying Emo around. The machine is a metaphor, it was created by Proog, and when Emo starts to reject it, Proog physically strikes him unconscious.",
-  "director": "Bassam Kurdali",
-  "movie_cast": "Cas Jansen|Tygo Gernandt",
+  "path": "media/HP_2.mkv",
+  "name": "Harry Potter and the Chamber of Secrets",
+  "overview": "A house elf warns Harry against returning to Hogwarts, but he decides to ignore it. When students and creatures at the school begin to get petrified, Harry finds himself surrounded in mystery.",
+  "director": "Chris Columbus",
+  "movie_cast": "Daniel Radcliffe|Emma Watson|Rupert Grint",
   "trailer": "",
-  "genre": "Animation|short|fantasy|syfy",
+  "genre": "Fantasy|Adventure",
   "stars": 5,
-  "thumbnail": "spring_staff_16_9_logo.jpg"
+  "thumbnail": "HP_2.jpg"
 }
